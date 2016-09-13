@@ -1,0 +1,14 @@
+{
+  "name": "node-buildpack-test-app",
+  "version": "0.0.1",
+  "description": "nsolid 2.0.0 buildpack integration test app",
+  "repository" : {
+    "type" : "git",
+    "url" : "http://github.com/example/example.git"
+  },
+  "dependencies": {
+  },
+  "engines": {
+    "nsolid": "2.0.0-argon-rc.1"
+  }
+}
