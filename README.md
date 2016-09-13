@@ -1,10 +1,8 @@
-# Heroku Buildpack for Node.js
+# Heroku Buildpack for N|Solid
 
-![nodejs](https://cloud.githubusercontent.com/assets/51578/13712672/efdf2a40-e792-11e5-82ef-492478cbc0dc.png)
+[![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
 
-This is the official [Heroku buildpack](http://devcenter.heroku.com/articles/buildpacks) for Node.js apps.
-
-[![Build Status](https://travis-ci.org/heroku/heroku-buildpack-nodejs.svg)](https://travis-ci.org/heroku/heroku-buildpack-nodejs)
+This is the official [Heroku buildpack](http://devcenter.heroku.com/articles/buildpacks) for [N|Solid](https://nodesource.com/products/nsolid) apps.
 
 ## Documentation
 
@@ -18,35 +16,10 @@ For more general information about buildpacks on Heroku:
 - [Buildpacks](https://devcenter.heroku.com/articles/buildpacks)
 - [Buildpack API](https://devcenter.heroku.com/articles/buildpack-api)
 
-## Locking to a buildpack version
-
-In production, you frequently want to lock all of your dependencies - including
-buildpacks - to a specific version. That way, you can regularly update and
-test them, upgrading with confidence.
-
-First, find the version you want from
-[the list of buildpack versions](https://github.com/heroku/heroku-buildpack-nodejs/releases).
-Then, specify that version with `buildpacks:set`:
-
-```
-heroku buildpacks:set https://github.com/heroku/heroku-buildpack-nodejs#v83 -a my-app
-```
 
 If you have trouble upgrading to the latest version of the buildpack, please
-open a support ticket at [help.heroku.com](https://help.heroku.com/) so we can assist.
+open a support ticket at [help.heroku.com](https://help.heroku.com/) so they can assist.
 
-### Chain Node with multiple buildpacks
-
-This buildpack automatically exports node, npm, and any node_modules binaries
-into the `$PATH` for easy use in subsequent buildpacks.
-
-## Feedback
-
-Having trouble? Dig it? Feature request?
-
-- [help.heroku.com](https://help.heroku.com/)
-- [@hunterloftis](http://twitter.com/hunterloftis)
-- [GitHub issues](https://github.com/heroku/heroku-buildpack-nodejs/issues)
 
 ## Hacking
 
