@@ -16,7 +16,11 @@ $ heroku open
 
 `$ heroku config:add BUILDPACK_URL=https://github.com/joemccann/nsolid-2.0-heroku-buildpack -a YOUR_APP_NAME`
 
-Note: if you have an `app.json` file, like the one in the Getting Started repo, you'll need to remove the property and value `image: heroku/nodejs` to verify that the deployment fetches N|Solid and not the Heroku Node.js build.
+`$ heroku buildpacks:set https://github.com/joemccann/nsolid-2.0-heroku-buildpack -a YOUR_APP_NAME`
+
+then redeploy
+
+`$ git push heroku master`
 
 You will have N|Solid 2.0 powering your Node app!
 
