@@ -79,7 +79,6 @@ install_nsolid() {
   curl "$download_url" --silent --fail -o /tmp/node.tar.gz || (echo "Unable to download nsolid $version; does it exist?" && false)
   echo curl
   tar xzf /tmp/node.tar.gz -C /tmp
-  ls -l /tmp
   echo $dir
   mv /tmp/nsolid-v$version-$os-$cpu/* $dir
   chmod +x $dir/bin/*
