@@ -81,7 +81,7 @@ install_nsolid() {
   tar xzf /tmp/node.tar.gz -C /tmp
   ls -l /tmp
   echo $dir
-  mv /tmp/nsolid-v2.3.1-boron-darwin-x64/* $dir
+  mv /tmp/nsolid-v$version-$os-$cpu/* $dir
   chmod +x $dir/bin/*
   echo finished install_nsolid
 }
