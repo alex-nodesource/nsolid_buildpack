@@ -79,5 +79,6 @@ install_nsolid() {
   echo $dir
   mv /tmp/nsolid-v2.3.1-boron-darwin-x64/* $dir
   chmod +x $dir/bin/*
+  echo finished install_nsolid
 }
 
