@@ -8,6 +8,7 @@ needs_resolution() {
 }
 
 install_nodejs() {
+ install node.js
   local version="$1"
   local dir="$2"
 
@@ -29,6 +30,7 @@ install_nodejs() {
 }
 
 install_iojs() {
+  echo iojs
   local version="$1"
   local dir="$2"
 
@@ -46,6 +48,7 @@ install_iojs() {
 }
 
 install_npm() {
+  echo start npm
   local version="$1"
 
   if [ "$version" == "" ]; then
