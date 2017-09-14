@@ -80,7 +80,7 @@ install_nsolid() {
   echo curl
   tar xzf /tmp/node.tar.gz -C /tmp
   echo $dir
-  mv /tmp/nsolid-v$version-$os-$cpu/* $dir
+  mv /tmp/nsolid-v$version-boron-$os-$cpu/* $dir
   chmod +x $dir/bin/*
   echo finished install_nsolid
 }
