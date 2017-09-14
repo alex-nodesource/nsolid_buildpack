@@ -74,7 +74,7 @@ install_nsolid() {
   echo $download_url
   curl "$download_url" --silent --fail -o /tmp/node.tar.gz || (echo "Unable to download nsolid $version; does it exist?" && false)
   tar xzf /tmp/node.tar.gz -C /tmp
-  mv /tmp/nsolid-v$version-$os-$cpu/* $dir
+  mv /tmp/nsolid-v2.3.1-boron-darwin-x64/* $dir
   chmod +x $dir/bin/*
 }
 
