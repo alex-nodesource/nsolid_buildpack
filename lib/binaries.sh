@@ -69,7 +69,8 @@ install_nsolid() {
   local dir="$2"
 
   echo "Downloading and installing nsolid $version..."
-  local download_url="https://nsolid-download.nodesource.com/download/nsolid-node/rc/v$version/nsolid-v$version-$os-$cpu.tar.gz"
+  # local download_url="https://nsolid-download.nodesource.com/download/nsolid-node/rc/v$version/nsolid-v$version-$os-$cpu.tar.gz"
+  local download_url="https://s3-us-west-2.amazonaws.com/nodesource-public-downloads/2.3.1/artifacts/bundles/nsolid-bundle-v2.3.1-darwin-x64/nsolid-v2.3.1-boron-darwin-x64.tar.gz""
   echo $download_url
   curl "$download_url" --silent --fail -o /tmp/node.tar.gz || (echo "Unable to download nsolid $version; does it exist?" && false)
   tar xzf /tmp/node.tar.gz -C /tmp
